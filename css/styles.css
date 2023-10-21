@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+/* CSS-Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* box-sizing:border-box for including padding into width, so width(400px)-2*padding(24px)=352. By default its content-box*/
+    
+}
+
+body{
+    margin: 0.5rem;
+    font-family:"Playpen Sans",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-align: center;    
+}
+
+nav{
+    border: 2px solid #333;
+    border-radius: 2rem;
+    margin: 0 auto 1rem; /* 0 as top margin,left-right as auto for centering(eat L R remaining margin), 1rem as margin-bottom */
+    max-width: 600px; /* Limiting width of the element */
+    font-size: 3rem;
+    line-height: 7rem;
+    } 
+h2{
+    padding: 1rem;
+    background: gold;
+    border-radius: 2rem 2rem 0 0 ; /* clockwise from top-left top-right bottom-right bottom-left */
+}
+
+ul{
+    list-style-type: none ;
+}
+
+li{
+    border-top: 1px solid #333;
+}
+li a{
+    display: block;/* To fill the hover color (black) to full width of the menu-item  */
+}
+
+/* li a:visited is a psuedo class */
+li a,
+li a:visited{
+    text-decoration: none;
+    color: #333
+}
+
+li a:hover,
+a:focus{
+    background: #333;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+/* To round the border overflow of last item of list */
+li:last-child a{
+    border-radius: 0 0 1.5rem 1.5rem;
+}
